@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Organizations in Northern Virginia</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .org-card {
+            transition: all 0.3s;
+        }
+        .org-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transform: translateY(-5px);
+        }
+        @media print {
+            .org-card {
+                break-inside: avoid;
+            }
+            .area-section {
+                break-inside: avoid-start;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center">Cancer Organizations in Northern Virginia</h1>
+            <p class="text-xl text-center mt-2">A Comprehensive Resource for SYNERGY HomeCare's Cancer Care Initiative</p>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">About This Resource</h2>
+            <p class="text-gray-700 mb-4">This comprehensive dashboard provides information about cancer-focused organizations, advocacy groups, and support groups in the Northern Virginia area. It is designed to support SYNERGY HomeCare's cancer care initiative, helping to identify potential partners and resources for individuals in need of care services during their cancer journey.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Coverage Areas
+                    </h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Chantilly, VA - 20151</li>
+                        <li>Centreville, VA - 20121, 20120</li>
+                        <li>Herndon, VA - 20171</li>
+                        <li>South Riding, VA - 20152</li>
+                        <li>Fairfax, VA - 22033</li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 rounded-lg p-4">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">
+                        <i class="fas fa-hand-holding-heart mr-2"></i>SYNERGY HomeCare Services
+                    </h3>
+                    <p class="text-gray-700">Our caregivers provide specialized support for individuals with cancer, including assistance with daily activities, transportation to medical appointments, medication reminders, meal preparation, and compassionate companionship throughout treatment and recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="container mx-auto px-4 py-4">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="w-full md:w-1/2">
+                    <input type="text" id="search" placeholder="Search organizations..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="w-full md:w-1/2 flex flex-wrap gap-2">
+                    <button class="filter-btn bg-blue-100 hover:bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm" data-filter="all">All</button>
+                    <button class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm" data-filter="Chantilly">Chantilly</button>
+                    <button class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm" data-filter="Centreville">Centreville</button>
+                    <button class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm" data-filter="Herndon">Herndon</button>
+                    <button class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm" data-filter="South Riding">South Riding</button>
+                    <button class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm" data-filter="Fairfax">Fairfax</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizations by Area -->
+    <div class="container mx-auto px-4">
+        <!-- Chantilly Area -->
+        <section id="chantilly" class="area-section mb-10">
+            <h2 class="text-2xl font-bold text-blue-700 border-b-2 border-blue-200 pb-2 mb-6">Chantilly, VA (20151)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- American Oncology Cares -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Chantilly">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">American Oncology Cares</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">14200 Park Meadow Drive, Suite 330S<br>Chantilly, VA 20151</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">American Oncology Cares Foundation provides vital non-medical financial aid to adult cancer patients—covering rent, utilities, food, and more during treatment.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Financial assistance for non-medical expenses</li>
+                            <li>Support for adult cancer patients</li>
+                            <li>Help with rent, utilities, and food costs</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://www.aoncology.com/american-oncology-cares/" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: Not provided</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: Not provided</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chargers Against Cancer -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Chantilly">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Chargers Against Cancer</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">Chantilly High School<br>4201 Stringfellow Road<br>Chantilly, VA 20151</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">Chargers Against Cancer is a student-led club that creates awareness for cancer and provides an opportunity for students to volunteer at the local Inova hospital as aids for cancer patients.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Cancer awareness programs</li>
+                            <li>Student volunteer opportunities with cancer patients</li>
+                            <li>Community outreach</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://chantillynews.org/11986/features/chargers-against-cancer-creates-charitable-change-to-the-community/" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: Not provided</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: Not provided</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hope Connections for Cancer Support -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Chantilly">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Hope Connections for Cancer Support</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Administrative Office:</p>
+                        <p class="mb-2">14200 Park Meadow Drive, Suite 330S<br>Chantilly, VA 20151</p>
+                        
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Main Center:</p>
+                        <p class="mb-2">Funger House, W. Scott<br>10100 Laureate Way<br>Bethesda, MD 20814</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">Hope Connections offers free, professionally led programs for people with cancer and their loved ones dealing with the emotional and physical impact of cancer.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Support groups</li>
+                            <li>Educational workshops</li>
+                            <li>Stress reduction programs</li>
+                            <li>Mind-body activities (yoga, meditation, etc.)</li>
+                            <li>Social gatherings</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://hopeconnectionsforcancer.org/" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: Not provided</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: (301) 634-7500 (Bethesda location)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Centreville Area -->
+        <section id="centreville" class="area-section mb-10">
+            <h2 class="text-2xl font-bold text-blue-700 border-b-2 border-blue-200 pb-2 mb-6">Centreville, VA (20121, 20120)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- DC Candlelighters Childhood Cancer Foundation -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Centreville">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">DC Candlelighters Childhood Cancer Foundation</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">P.O. Box 824<br>Centreville, VA 20122</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">DC Candlelighters extends its support to children battling cancer, their families, long-term survivors and their families, as well as bereaved families.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Financial assistance for families facing childhood cancer</li>
+                            <li>Educational support</li>
+                            <li>Emotional and social support</li>
+                            <li>Resources for families of children with cancer</li>
+                            <li>Community events and activities</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://dccandlelighters.org/" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: dccandlelighters@gmail.com</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: Not provided</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Herndon Area -->
+        <section id="herndon" class="area-section mb-10">
+            <h2 class="text-2xl font-bold text-blue-700 border-b-2 border-blue-200 pb-2 mb-6">Herndon, VA (20171)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cancer Can Rock -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Herndon">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Cancer Can Rock</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">13800 Coppermine Road, Suite 116<br>Herndon, VA 20171</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">Cancer Can Rock is a non-profit organization founded by Jim Ebert, a multi-platinum record producer and cancer survivor. Unlike most cancer-based charities, Cancer Can Rock doesn't seek a cure, rather it strives to serve a singular community: Musicians facing aggressive cancer.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Professional recording studio experience for musicians with cancer</li>
+                            <li>Audio and video production</li>
+                            <li>Support for musicians fighting aggressive cancer</li>
+                            <li>Preservation of musical legacy</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://cancercanrock.org/" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: support@cancercanrock.org</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: 202-987-MUSIC</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bite Me Cancer -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Herndon">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Bite Me Cancer Foundation</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">Based in Herndon, VA area</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">Bite Me Cancer Foundation raises money and hosts events to help provide support to teens with cancer and to fund research grants dedicated to healing thyroid cancer.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Teen Support Bags for cancer patients</li>
+                            <li>Thyroid cancer research funding</li>
+                            <li>Awareness campaigns</li>
+                            <li>Support for teenage cancer patients</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://www.bitemecancer.org/" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: info@bitemecancer.org (assumed from standard convention)</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: Not provided</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- South Riding Area -->
+        <section id="southRiding" class="area-section mb-10">
+            <h2 class="text-2xl font-bold text-blue-700 border-b-2 border-blue-200 pb-2 mb-6">South Riding, VA (20152)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Ellie's Hats -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="South Riding">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Ellie's Hats</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">25050 Riding Plaza, Suite 130-648<br>South Riding, VA 20152</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">Ellie's Hats was founded to brighten the day of children with cancer. The organization donates hats and other items to children battling cancer, supports their families with financial assistance, and raises awareness of childhood cancer.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Donation of hats to children with cancer</li>
+                            <li>Financial assistance to families with children receiving cancer treatment</li>
+                            <li>Childhood cancer awareness campaigns</li>
+                            <li>Local financial assistance</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://ellieshats.org/" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: Not provided</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: (703) 606-8380</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Fairfax Area -->
+        <section id="fairfax" class="area-section mb-10">
+            <h2 class="text-2xl font-bold text-blue-700 border-b-2 border-blue-200 pb-2 mb-6">Fairfax, VA (22033)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Inova Schar Cancer Institute - Fair Oaks -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Fairfax">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Inova Schar Cancer Institute - Fair Oaks</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">3580 Joseph Siewick Dr<br>Fairfax, VA 22033</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">Inova Schar Cancer Institute is a leader in multi-disciplinary care for people diagnosed with cancer. They deliver high-quality cancer care with a patient-centered approach.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Comprehensive cancer diagnosis and treatment</li>
+                            <li>Multi-disciplinary care teams</li>
+                            <li>Advanced treatment options</li>
+                            <li>Clinical trials</li>
+                            <li>Support services</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://www.inova.org/our-services/inova-schar-cancer-institute" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: Not provided</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: 703-391-4395</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Inova Life with Cancer -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Fairfax">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Inova Life with Cancer</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Main Address:</p>
+                        <p class="mb-2">8411 Pennell St<br>Fairfax, VA 22031</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">Inova Life with Cancer helps individuals and families meet the challenges of living with cancer by providing evidence-based education, support, and resources. All programs and services are offered free of charge.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Support groups</li>
+                            <li>Educational programs</li>
+                            <li>Counseling services</li>
+                            <li>Wellness activities</li>
+                            <li>Exercise classes</li>
+                            <li>Nutrition guidance</li>
+                            <li>Acupuncture</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://www.lifewithcancer.org/" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: Not provided</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: (703) 206-5433</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Virginia Cancer Specialists - Fair Oaks Office -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Fairfax">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Virginia Cancer Specialists - Fair Oaks Office</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-blue-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">3700 Joseph Siewick Drive, Suite 408<br>Fairfax, VA 22033</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">Virginia Cancer Specialists (VCS) is the largest oncology group in Northern Virginia with 10 locations throughout the region. They provide comprehensive, integrated cancer care including medical oncology, radiation oncology, and palliative care.</p>
+                        
+                        <p class="font-semibold text-blue-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Medical oncology</li>
+                            <li>Hematology services</li>
+                            <li>Radiation oncology</li>
+                            <li>Clinical trials</li>
+                            <li>Patient support services</li>
+                            <li>Financial counseling</li>
+                            <li>Genetic counseling</li>
+                            <li>Survivorship programs</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://www.virginiacancerspecialists.com/locations/fair-oaks-office/" class="text-blue-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: Not provided</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: (571) 350-8400</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Regional Organizations -->
+        <section id="regional" class="area-section mb-10">
+            <h2 class="text-2xl font-bold text-blue-700 border-b-2 border-blue-200 pb-2 mb-6">Regional Organizations (Serving Northern Virginia)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Virginia Breast Cancer Foundation -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Regional">
+                    <div class="bg-green-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Virginia Breast Cancer Foundation</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-green-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">5004 Monument Avenue, Suite 102<br>Richmond, VA 23230<br>(Serves all of Virginia)</p>
+                        
+                        <p class="font-semibold text-green-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">VBCF empowers Virginians impacted by breast cancer through access, advocacy, education, and community action. They work to ensure quality care for all and are a voice for the breast cancer community.</p>
+                        
+                        <p class="font-semibold text-green-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Breast cancer education</li>
+                            <li>Support group listings</li>
+                            <li>Financial assistance information</li>
+                            <li>Advocacy initiatives</li>
+                            <li>Free educational materials</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://www.vbcf.org/" class="text-green-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <a href="https://www.vbcf.org/find-a-support-group/" class="text-green-600 hover:underline" target="_blank"><i class="fas fa-users mr-2"></i>Support Group Directory</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: info@vbcf.org</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: (804) 285-1200</p>
+                            <p><i class="fas fa-phone mr-2"></i>Toll-free: 1-800-345-8223</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- The Cancer Action Coalition of Virginia -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Regional">
+                    <div class="bg-green-600 text-white p-4">
+                        <h3 class="text-xl font-bold">The Cancer Action Coalition of Virginia</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-green-700"><i class="fas fa-map-marker-alt mr-2"></i>Address:</p>
+                        <p class="mb-2">Based in Virginia<br>(Statewide organization)</p>
+                        
+                        <p class="font-semibold text-green-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">CACV fosters relationships between healthcare systems, non-profits, community organizations and individuals to work together for a Virginia without cancer. The coalition implements the Virginia Cancer Plan to reduce the burden of cancer for all Virginians.</p>
+                        
+                        <p class="font-semibold text-green-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Cancer prevention initiatives</li>
+                            <li>Early detection programs</li>
+                            <li>Treatment resources</li>
+                            <li>Survivorship and palliative care information</li>
+                            <li>Policy advocacy</li>
+                            <li>Community collaboration</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://cancercoalitionofvirginia.org/" class="text-green-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: info@cancercoalitionofvirginia.org (assumed from standard convention)</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: Not provided</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- American Cancer Society - Virginia -->
+                <div class="org-card bg-white rounded-lg shadow-md overflow-hidden" data-location="Regional">
+                    <div class="bg-green-600 text-white p-4">
+                        <h3 class="text-xl font-bold">American Cancer Society - Virginia</h3>
+                    </div>
+                    <div class="p-4">
+                        <p class="font-semibold text-green-700"><i class="fas fa-map-marker-alt mr-2"></i>Regional Coverage:</p>
+                        <p class="mb-2">Serves all of Virginia including Northern Virginia region</p>
+                        
+                        <p class="font-semibold text-green-700 mt-4"><i class="fas fa-info-circle mr-2"></i>Description:</p>
+                        <p class="mb-2">The American Cancer Society has programs and services to help cancer patients manage treatment and recovery and find the emotional support they need. They provide resources for patients, survivors, and caregivers.</p>
+                        
+                        <p class="font-semibold text-green-700 mt-4"><i class="fas fa-hands-helping mr-2"></i>Services:</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Cancer support programs</li>
+                            <li>Transportation assistance</li>
+                            <li>Lodging assistance</li>
+                            <li>Information and resources</li>
+                            <li>Patient navigation</li>
+                            <li>Survivorship resources</li>
+                            <li>Local fundraising events</li>
+                        </ul>
+                        
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="https://www.cancer.org/about-us/local/virginia.html" class="text-green-600 hover:underline" target="_blank"><i class="fas fa-globe mr-2"></i>Website</a>
+                            <p><i class="fas fa-envelope mr-2"></i>Email: Not provided</p>
+                            <p><i class="fas fa-phone mr-2"></i>Phone: 1-800-227-2345 (24/7 helpline)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">About SYNERGY HomeCare</h3>
+                    <p>SYNERGY HomeCare provides high-quality, compassionate care services to help individuals maintain their independence and quality of life in the comfort of their own homes.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li>Cancer Care Support</li>
+                        <li>Personal Care</li>
+                        <li>Companionship</li>
+                        <li>Homemaking</li>
+                        <li>Transportation</li>
+                        <li>Respite Care</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resource Information</h3>
+                    <p class="mb-2">This directory was compiled for SYNERGY HomeCare's cancer care initiative to identify potential partnerships and resources for individuals with cancer.</p>
+                    <p class="mb-2">Last Updated: May 2025</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+                <p>&copy; 2025 SYNERGY HomeCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search and filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('search');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.org-card');
+            
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                cards.forEach(card => {
+                    const cardText = card.textContent.toLowerCase();
+                    if (cardText.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Filter functionality
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update button styling
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-blue-100', 'text-blue-800');
+                        btn.classList.add('bg-gray-100', 'text-gray-800');
+                    });
+                    this.classList.remove('bg-gray-100', 'text-gray-800');
+                    this.classList.add('bg-blue-100', 'text-blue-800');
+                    
+                    // Filter cards
+                    cards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            if (card.getAttribute('data-location') === filter) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
